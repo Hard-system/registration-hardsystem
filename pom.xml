@@ -40,13 +40,12 @@
             <artifactId>spring-boot-starter-security</artifactId>
             <version>3.2.5</version>
         </dependency>
-        <!--        added to provide async spring boot security-->
+        <!-- added to provide async spring boot security -->
         <dependency>
             <groupId>org.springframework.security</groupId>
             <artifactId>spring-security-config</artifactId>
             <version>6.2.4</version>
         </dependency>
-
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-webflux</artifactId>
@@ -98,7 +97,7 @@
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
-            <version>1.18.30</version> <!-- Use the latest version available -->
+            <version>1.18.30</version>
         </dependency>
         <dependency>
             <groupId>org.apache.maven.plugins</groupId>
@@ -106,6 +105,7 @@
             <version>3.4.0</version>
         </dependency>
     </dependencies>
+
     <dependencyManagement>
         <dependencies>
             <dependency>
@@ -125,21 +125,23 @@
             </dependency>
         </dependencies>
     </dependencyManagement>
+
+    <distributionManagement>
+        <snapshotRepository>
+            <id>github</id>
+            <name>GitHub HardSystem/Registration Apache Maven SNAPSHOT Packages</name>
+            <url>https://maven.pkg.github.com/Hard-system/registration-hardsystem</url>
+        </snapshotRepository>
+        <repository>
+            <id>github</id>
+            <name>GitHub HardSystem/Registration Apache Maven Release Packages</name>
+            <url>https://maven.pkg.github.com/Hard-system/registration-hardsystem</url>
+        </repository>
+    </distributionManagement>
+
     <profiles>
         <profile>
             <id>github-actions</id>
-            <distributionManagement>
-                <snapshotRepository>
-                    <id>github</id>
-                    <name>GitHub HardSystem/Registration Apache Maven SNAPSHOT Packages</name>
-                    <url>https://maven.pkg.github.com/Hard-system/registration-hardsystem</url>
-                </snapshotRepository>
-                <repository>
-                    <id>github</id>
-                    <name>GitHub HardSystem/Registration Apache Maven Release Packages</name>
-                    <url>https://maven.pkg.github.com/Hard-system/registration-hardsystem</url>
-                </repository>
-            </distributionManagement>
         </profile>
     </profiles>
 </project>
