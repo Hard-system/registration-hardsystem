@@ -1,0 +1,46 @@
+HELP.md
+target/
+build/
+log/
+allure-results
+contract-testing-output/*
+!.gitkeep
+
+# Maven
+!.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**
+!**/src/test/**
+.DS_Store
+
+# Node.js
+/node_modules
+/.pnp
+.pnp.js
+npm-debug.log*
+
+# IDEs
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+build/
+
+### VS Code ###
+.vscode/
