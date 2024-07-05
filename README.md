@@ -1,0 +1,1 @@
+command after commiting the changes, you need to write is: mvn deploy  in order to create new library version
